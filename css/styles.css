@@ -1,113 +1,165 @@
-
 body {
   background-color: #F0FFFF;
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-  font-weight: 900;
-  font-size: 4rem
+@media only screen and (max-width: 575px) {
+
 }
 
-h2{
+h1 {
   font-weight: 900;
-  font-size: 2rem
+  font-size: 4rem;
 }
 
-h3{
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+h3 {
   font-weight: 600;
-  font-size: 1.2rem
-}
-h4{
-  font-weight: 400;
   font-size: 1.2rem;
 }
 
-p{
+/* h4{
+  font-weight: 400;
+  font-size: 1.2rem;
+} */
+p {
   margin-bottom: .5rem;
 }
 
 /* Title Section */
-
-.title{
+.title {
   background-image: linear-gradient(to bottom right, #2C3E50, #95A5A6);
   color: #F0FFFF;
 }
 
-.navbar{
+.navbar {
   padding-bottom: 3rem;
 }
 
-.nav-item{
+.nav-item {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.2rem
 }
 
-.title-container{
+.title-container {
   padding: 2% 5%;
 }
 
-.really{
+.really {
   margin: 5rem auto 0 auto;
 }
 
-.strapline{
+/* .strapline{
 
-}
-
-.title-image{
+} */
+.title-image {
   width: 50%;
   margin: 50px auto 50px 0;
   transform: rotate(-25deg);
 }
 
-/* Features Section */
+hr{
+  width: 20%;
+  border-top: 2px dotted #2C3E50;
+  margin: 20px auto;
+}
 
-.feature-box{
+.copyright{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* From trial & error it seems that the media query must be placed after the original definition */
+
+/* Changes to title section before text wraps */
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Changes to title section when views on a small (phone) screen */
+@media only screen and (max-width: 575px) {
+  .title-image {
+    /* position: static; */
+    transform: rotate(0deg);
+  }
+  .title-heading {
+    text-align: center
+  }
+}
+
+/* Features Section */
+.feature-box {
   text-align: center;
   padding: 3% 5%
 }
 
-.feature-image{
+.feature-image {
   width: 30%;
   margin-bottom: 1rem;
 }
 
-.download-button{
+.download-button {
   margin-top: 5%
 }
 
 /* Contact Section */
-
-.contact{
+.contact {
   padding: 2% 5% 5% 5%;
 }
 
 /* Product Pages */
-
-.product-outline{
+.product-outline {
   padding: 2% 10% 5% 10%;
   background-image: linear-gradient(to bottom right, #2C3E50, #95A5A6);
   color: #F0FFFF;
 }
-.features{
+
+.product-description {
   padding: 2% 10% 5% 10%;
 }
 
-.instructions{
-  padding: 2% 10% 5% 10%;
+.product-heading {
+  margin-top: 40px;
+  color: #2C3E50
 }
-.product-image{
+
+/* .instructions {
+  padding: 2% 10% 5% 10%;
+} */
+
+.product-image {
   width: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* Privacy Pages */
-.privacy-intro{
+/* Changes to introduction when views on a small (phone) screen */
+@media only screen and (max-width: 575px) {
+  .introduction {
+    text-align: center
+  }
+}
+
+
+
+/* Privacy & Teems Pages */
+.textpage-intro {
   padding: 2% 10% 5% 10%;
   background-image: linear-gradient(to bottom right, #2C3E50, #95A5A6);
   color: #F0FFFF;
 }
-.privacy-body{
+
+.textpage-body {
   padding: 2% 10% 5% 10%;
 }

@@ -16,11 +16,12 @@
     <!-- CSS Style Sheets (inc Bootstrap) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Really Smart Apps</title>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <title>Really Smart Apps</title>
 
   </head>
 
@@ -58,46 +59,64 @@
           </ul>
         </div>
       </nav>
-    <!-- <section class="back-button">
+      <!-- <section class="back-button">
       <a href="index.html">Home</a>
     </section> -->
 
+      <div class="introduction">
+        <h2>Smart Pass</h2>
 
-      <h2>Smart Vault</h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="product-image" src="images/SmartPass-light.png" alt="Smart Vault Image">
+            </div>
+            <div class="col-sm-6">
+              <p>An easy to use passcode manager - with a twist!</p>
+              <p>Designed to help improve password hygiene but but with the minimum administative overhead as possible.</p>
+              <p>Designed to help those people who have 'traditionally' used the same password for multiple sites adopt more disciplined approach to on-line security. This is achieved by having the minimum administative overhead as possible.</p>
 
-      <div class="container-fluid">
-        <div class="row">
+            </div>
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
 
-          <div class="col-sm-6">
-
-            <img class="product-image" src="images/SmartVault-jail.png" alt="Smart Vault Image">
-          </div>
-          <div class="col-sm-6">
-            <p>A simple to use password store</p>
-            <p>If you are one of these people who store there password in the back of their diary - please dont.</p>
-          </div>
-
-        </div> <!-- End Row -->
-      </div> <!-- End Container -->
+      </div> <!-- End introduction -->
 
     </section>
 
     <section class="product-description">
+      <h3 class="product-heading">Overview</h3>
+      <p>Are you someone who reuses the same password across multiple sites? I was, until one of these was hacked and 'strange' things started happening on other sites.</p>
+      <p>I initially turned to one of the many excellent comprehensive password management applications on the App Store but unfortunately I wasn't disciplined enough to maintain the data. So, I created SmartPass.</p>
+      <p>The App doesn't hold any passwords, but uses 2 bits of fixed data (a PIN and 'memorable' word) plus one variable (the domain or application name) to generate a 'sudo-random' passcode. When you need it again, it simply regenerates it.
+      </p>
+      <p>Go on - give it a go! The App is free to use although if you find it useful you may want to show your appreciation by buying me a coffee.</p>
+
+      <hr>
+
       <h3 class="product-heading">Key Features</h3>
       <ul>
-        <li>Log-in with a single 4 digit passcode (PIN).</li>
-        <li>Log and view all your passwords in a single list.</li>
-        <li>Copy passwords to clipboard to paste into website</li>
-        <li>Set default user name (usually your email), which can be overwritten if necassary</li>
+        <li>Log-in with a single 4 digit PIN.</li>
+        <li>Enter the domain or application name to generate the initial passcode</li>
+        <li>The passcode and user name is stored in a table</li>
+        <li>A simple touch of the table entry retrieves the passcodey</li>
+        <li>Passcodes are akways copied to the 'pasteboard'</li>
+        <li>Backup entries to iCloud</li>
         <li>Classic and jailhouse background themes</li>
         <li>Supports iPhone Light and Dark modes.</li>
       </ul>
 
       <hr>
 
-      <h3 class="product-heading">Introduction</h3>
-      <p>Smart Vault is deliberately designed to be simple with just the minimal fuctionality required to store your internet passwors on your iPhone. It is intended to encourage those people that carry around written passwords to raise their on-line security up one notch.</p>
-      <p>If you required rich functionality to manage your on-line access then there are a number of excellent apps in the App Store that will do this for you.</p>
+      <h3 class="product-heading">Instructions</h3>
+      <strong>Set Up</strong>
+      <p>Set the ‘Key Data’ - a 4 digit PIN and a 8 (or more) character memorable word or catch phrase. These, along with the domain name, are used to calculate the passcode. Also (optionally) set a default username.</p>
+      <strong>Add Passcodes</strong>
+      <p>Set requirements for passcode length and the use of optional characters. Then enter the domain name and username (unless using the default) and touch ‘Generate Passcode’. These settings are saved under the Passcodes tab.</p>
+      <strong>Passcodes</strong>
+      <p>Touch a domain name to reveal the passcode. Use a long press to change the username. Swipe left to delete a record.</p>
+      <strong>General</strong>
+      <p>Remember to periodically to backup the passcode - under settings. This does require an iCloud account.</p>
 
     </section>
 
